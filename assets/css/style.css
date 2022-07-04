@@ -282,10 +282,18 @@ section ul li *::before
         left: 70px;
     }
     .imgSlider{
-        height: 85vh;
+        height: 66vh;
         object-fit: cover;
     }
     .imgInnerSlide{
-        height: 160px;
+        height: 180px;
+    }
+}
+@media screen and (min-width:500px ) and (max-width:820px) {
+    .imgSlider{
+        height: 66vh;
+    }
+    .imgInnerSlide{
+        height: 240px;
     }
 }
