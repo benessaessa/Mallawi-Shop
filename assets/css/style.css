@@ -285,4 +285,7 @@ section ul li *::before
         height: 85vh;
         object-fit: cover;
     }
+    .imgInnerSlide{
+        height: 160px;
+    }
 }
