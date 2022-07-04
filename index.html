@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mallawi Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/mallawi.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2997456d7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style_ar.css"> -->
+</head>
+
+<body>
+    
+    <div dir="rtl">
+        <nav class="navbar customHeader navbar-expand-lg mt-0 fixed-top px-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img src="assets/images/mallawi.png" class="pt-1" width="140px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLet" aria-controls="offcanvasTop">
+                    <i class="fa fa-align-justify text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav mx-auto pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              المنتجات
+                            </a>
+                            <ul class="dropdown-menu dropHeader bg-dark text-end" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item text-white" href="#">
+                                 ملابس رياضية
+                              </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                   رجالي
+                              </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                   حريمي
+                              </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                   أحذية
+                              </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)"> من نحن </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto pe-3">
+                        <li class="nav-item">
+                            <button class="btn btnRegister px-3 ms-2">التسجيل</button>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <i class="fa fa-heart"></i>
+                                <p class="badge badgeRed mb-0">1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <i class="fa fa-shopping-cart"></i>
+                                <p class="badge badgeRed mb-0">2</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                EN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="offcanvasLet" aria-labelledby="offcanvasLetLabel">
+            <div class="offcanvas-header">
+                <div class="input-group mt-2 me-4">
+                    <input type="text" class="form-control text-white bg-dark font-size-12 border-top-0 border-end-0 border-start-0" placeholder="Search For Products" aria-label="Search For Products" aria-describedby="basic-addon2">
+                    <span class="input-group-text bg-dark border-0" id="basic-addon2"><i class="fa fa-search text-white"></i></span>
+                </div>
+                <button type="button" class="mt-2" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#">Home</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#">Shop</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#">Categories</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#">About Us</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#">Contact Us</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#"><i class="fa fa-heart pe-2"></i> Wishlist</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#"><i class="fa fa-shuffle pe-2"></i> Compare</a></li>
+                    <li class="list-group-item border-light bg-dark"><a class="text-white text-decoration-none" href="#"><i class="fa fa-user pe-2"></i> Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+            <!-- Indicators/dots -->
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div> -->
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/bgSlide.png" alt="Chicago" class="d-block imgSlider" style="width:100%">
+                    <div class="carousel-caption pt-0">
+                        <div class="container overflow-hidden">
+                            <div class="row">
+                                <div class="col-md-6 pb-3" data-aos="zoom-out-left" data-aos-duration="1500">
+                                    <img src="assets/images/men3.jpg" class="imgInnerSlide rounded-2">
+                                </div>
+                                <div class="col-md-6 pt-lg-5" data-aos="zoom-out-right" data-aos-duration="1500">
+                                    <h4 class="pt-lg-5 pt-3"> رجالي وشبابي </h4>
+                                    <h3 class="py-2">طقم متكامل ومتواجد بكافة الألوان</h3>
+                                    <p>يوجد الكثير من المودلات المختلفة</p>
+                                    <button class="btn btnDangerNew mb-4">أطلب الآن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/bgdark.jpeg" alt="Chicago" class="d-block imgSlider" style="width:100%">
+                    <div class="carousel-caption">
+                        <div class="container overflow-hidden">
+                            <div class="row">
+                                <div class="col-md-6 pb-3" data-aos="zoom-out-left" data-aos-duration="1500">
+                                    <img src="assets/images/woman.jpg" class="imgInnerSlide rounded-2">
+                                </div>
+                                <div class="col-md-6 pt-lg-5" data-aos="zoom-out-right" data-aos-duration="1500">
+                                    <h4 class="pt-lg-5 pt-3">  حريمي وبناتي </h4>
+                                    <h3 class="py-2">طقم متكامل ومتواجد بكافة الألوان </h3>
+                                    <p>يوجد الكثير من المودلات المختلفة</p>
+                                    <button class="btn btnDangerNew mb-4">أطلب الآن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/blackbg.jpg" alt="Chicago" class="d-block imgSlider" style="width:100%">
+                    <div class="carousel-caption">
+                        <div class="container overflow-hidden">
+                            <div class="row">
+                                <div class="col-md-6 pb-3" data-aos="zoom-out-left" data-aos-duration="1500">
+                                    <img src="assets/images/sport1.jpg" class="imgInnerSlide rounded-2">
+                                </div>
+                                <div class="col-md-6 pt-lg-5" data-aos="zoom-out-right" data-aos-duration="1500">
+                                    <h4 class="pt-lg-5 pt-3">  أحذية  </h4>
+                                    <h3 class="py-2"> حذاء رياضي طبي مريح للقدمين   </h3>
+                                    <p>يوجد الكثير من المودلات المختلفة</p>
+                                    <button class="btn btnDangerNew mb-4">أطلب الآن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <section class="overflow-hidden pb-4">
+        <div class="container pt-2">
+            <h3 class="text-center py-3">المنتجات والأقسام</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 pb-3">
+                    <div class="overflow-hidden">
+                        <div class="imgProduct position-relative">
+                            <a href="#">
+                                <img src="assets/images/sport2.jpg">
+                                <p class="textDefult">رياضي</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 pb-3">
+                    <div class="overflow-hidden">
+                        <div class="imgProduct position-relative">
+                            <a href="#">
+                                <img src="assets/images/boys1.jpg">
+                                <p class="textDefult">أطفالي</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 pb-3">
+                    <div class="overflow-hidden">
+                        <div class="imgProduct position-relative">
+                            <a href="#">
+                                <img src="assets/images/woman2.jpg">
+                                <p class="textDefult">حريمي</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 pb-3">
+                    <div class="overflow-hidden">
+                        <div class="imgProduct position-relative">
+                            <a href="#">
+                                <img src="assets/images/men4.jpg">
+                                <p class="textDefult">رجالي</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sectionDark overflow-hidden">
+        <div class="container" dir="rtl">
+            <div class="text-center py-5">
+                <h2 class="text-white fw-bold pb-2">المنتجات الأكثر طلبا</h2>
+                <p class="text-white opacity-75 mb-0">تمتع بأرقى الاختيارات من المنتجات المميزة والمختارة بعناية من <br> ملوي شوب</p>
+                <div class="container theBest pt-4">
+                    <!-- Swiper -->
+                    <div class="swiper-container overflow-hidden py-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide mousePointer">
+                                <div class="overflow-hidden">
+                                    <div class="imgProduct newMaxHeight">
+                                        <div class="maxHeight overflow-hidden">
+                                            <img src="assets/images/sport1.jpg" class="imgNew">
+                                        </div>
+                                        <div class="cardRight">
+                                            <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                            <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                            <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                        </div>
+                                        <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                        <p class="text-white mb-1 pt-3">حذاء رياضي</p>
+                                        <p class="text-white mb-1">220 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide mousePointer">
+                                <div class="overflow-hidden">
+                                    <div class="imgProduct newMaxHeight">
+                                        <div class="maxHeight overflow-hidden">
+                                            <img src="assets/images/men2.jpg" class="imgNew">
+                                        </div>
+                                        <div class="cardRight">
+                                            <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                            <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                            <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                        </div>
+                                        <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                        <p class="text-white mb-1 pt-3">طقم شبابي متكامل</p>
+                                        <p class="text-white mb-1">800 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide mousePointer">
+                                <div class="overflow-hidden">
+                                    <div class="imgProduct newMaxHeight">
+                                        <div class="maxHeight overflow-hidden">
+                                            <img src="assets/images/woman2.jpg" class="imgNew">
+                                        </div>
+                                        <div class="cardRight">
+                                            <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                            <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                            <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                        </div>
+                                        <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                        <p class="text-white mb-1 pt-3">طقم بناتي متكامل</p>
+                                        <p class="text-white mb-1">1000 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide mousePointer">
+                                <div class="overflow-hidden">
+                                    <div class="imgProduct newMaxHeight">
+                                        <div class="maxHeight overflow-hidden">
+                                            <img src="assets/images/trouser.jpg" class="imgNew">
+                                        </div>
+                                        <div class="cardRight">
+                                            <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                            <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                            <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                        </div>
+                                        <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                        <p class="text-white mb-1 pt-3">بنطالون شبابي</p>
+                                        <p class="text-white mb-1">180 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide mousePointer">
+                                <div class="overflow-hidden">
+                                    <div class="imgProduct newMaxHeight">
+                                        <div class="maxHeight overflow-hidden">
+                                            <img src="assets/images/boys2.jpg" class="imgNew">
+                                        </div>
+                                        <div class="cardRight">
+                                            <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                            <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                            <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                        </div>
+                                        <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                        <p class="text-white mb-1 pt-3">دريس اطفال</p>
+                                        <p class="text-white mb-1">180 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-white">تخفيضات هائلة</h4>
+            <img src="assets/images/line.png" class="img-fluid">
+            <div class="row pt-5" dir="rtl">
+                <div class="col-lg-4 pt-lg-5">
+                    <img src="assets/images/salepng.png" class="img-fluid mt-lg-5">
+                </div>
+                <div class="col-lg-8">
+                    <div class="sale most-viewed">
+                        <div class="row justify-content-between mb-3 pb-3">
+
+                            <div class="pagination-container pb-5 col-sm-3 col-5">
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-next">
+                                    <img src="assets/images/icon-arrow-right.svg" width="17px" />
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="assets/images/icon-arrow-left.svg" width="17px" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container overflow-hidden pb-2">
+                            <div class="swiper-wrapper position-relative">
+                                <div class="swiper-slide mousePointer">
+                                    <div class="overflow-hidden">
+                                        <div class="imgProduct newMaxHeight">
+                                            <div class="maxHeight overflow-hidden">
+                                                <img src="assets/images/men4.jpg" class="imgNew">
+                                            </div>
+                                            <div class="cardRight">
+                                                <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                                <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                                <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                            </div>
+                                            <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                            <p class="text-white mb-1 pt-3">طقم رجالي متكامل</p>
+                                            <p class="text-white mb-1">1000 جنيه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mousePointer">
+                                    <div class="overflow-hidden">
+                                        <div class="imgProduct newMaxHeight">
+                                            <div class="maxHeight overflow-hidden">
+                                                <img src="assets/images/woman.jpg" class="imgNew">
+                                            </div>
+                                            <div class="cardRight">
+                                                <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                                <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                                <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                            </div>
+                                            <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                            <p class="text-white mb-1 pt-3">طقم حريمي</p>
+                                            <p class="text-white mb-1">1000 جنيه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mousePointer">
+                                    <div class="overflow-hidden">
+                                        <div class="imgProduct newMaxHeight">
+                                            <div class="maxHeight overflow-hidden">
+                                                <img src="assets/images/sport1.jpg" class="imgNew">
+                                            </div>
+                                            <div class="cardRight">
+                                                <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                                <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                                <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                            </div>
+                                            <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                            <p class="text-white mb-1 pt-3">حذاء رياضي</p>
+                                            <p class="text-white mb-1">300 جنيه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mousePointer">
+                                    <div class="overflow-hidden">
+                                        <div class="imgProduct newMaxHeight">
+                                            <div class="maxHeight overflow-hidden">
+                                                <img src="assets/images/boys2.jpg" class="imgNew">
+                                            </div>
+                                            <div class="cardRight">
+                                                <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                                <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                                <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                            </div>
+                                            <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                            <p class="text-white mb-1 pt-3">دريس أطفال</p>
+                                            <p class="text-white mb-1">200 جنيه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mousePointer">
+                                    <div class="overflow-hidden">
+                                        <div class="imgProduct newMaxHeight">
+                                            <div class="maxHeight overflow-hidden">
+                                                <img src="assets/images/shose.png" class="imgNew">
+                                            </div>
+                                            <div class="cardRight">
+                                                <p class="pt-2"><a href="#"><i class="fa fa-shuffle"></i></a></p>
+                                                <p><a href="#"><i class="fa fa-search"></i></a></p>
+                                                <p class="mb-2"><a href="#"><i class="fa fa-heart"></i></a></p>
+                                            </div>
+                                            <button class="btn btnDangerNew btnAppear w-100 rounded-0">أطلب الآن</button>
+                                            <p class="text-white mb-1 pt-3">حذاء رياضي</p>
+                                            <p class="text-white mb-1">300 جنيه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination mt-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section dir="rtl">
+        <div class="container py-5">
+            <div class="text-center">
+                <h3 class="pb-2">عروض آخر قطعة</h3>
+                <h2 class="fw-bold pb-2">القطعة الواحدة</h2>
+                <p class="opacity-75 mb-0">إكتشف كل ما هو جديد ومثير داخل  عروض<br> القطعة الواحدة</p>
+            </div>
+        </div>
+        <div class="container most-viewed firstSwipper pt-4">
+            <div class="row justify-content-between pb-4 mb-3">
+
+                <div class="pagination-container col-sm-2 col-5">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-next">
+                        <img src="assets/images/icon-arrow-right.svg" width="17px" />
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="assets/images/icon-arrow-left.svg" width="17px" />
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container overflow-hidden pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card mb-2 cardCourse position-relative">
+                            <a href="#">
+                                <img src="assets/images/woman2.jpg" class="card-img imgCard">
+                            </a>
+                            <div class="card-body pb-2">
+                                <a href="#">
+                                    <div class="absoluteText text-center px-2">
+                                        <p class="mb-1">01</p>
+                                        <p class="mb-1">Nov</p>
+                                    </div>
+                                    <div class="newOverlay">
+                                        <p class="font-size-13 mb-0"><span>حريمي</span> </p>
+                                    </div>
+                                    <h4 class="text-white text-center">طقم حريمي للخروجات</h4>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <p class="text-white font-size-12 text-center">
+                                        <span class="opacity-75">الموزع</span> 
+                                        <img src="assets/images/avatar.png" class="rounded-circle" width="30" height="30"> 
+                                        <span class="opacity-75 pe-2">أمة التوحيد</span>
+                                    </p>
+                                    <div class="tooltips text-white">
+                                        <i class="fa fa-share"></i>
+                                        <span class="tooltiptexts">
+                                            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white ps-2"></i></a>
+                                            <a href="#"><i class="fa fa-envelope text-white ps-2"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin text-white ps-2"></i></a>
+                                            <a href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-white opacity-75 font-size-13 text-center">يوجد العديد من المودلات والأشكال الأخري التي تناسب جميع الأذواق بكافة الأشكال والمقاسات</p>
+                                <p class="text-center text-white"><button class="btn btnOrder w-100 fw-bold text-uppercase font-size-14" href="#">أطلب الأن</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-2 cardCourse position-relative">
+                            <a href="#">
+                                <img src="assets/images/boys1.jpg" class="card-img imgCard">
+                            </a>
+                            <div class="card-body pb-2">
+                                <a href="#">
+                                    <div class="absoluteText text-center px-2">
+                                        <p class="mb-1">01</p>
+                                        <p class="mb-1">Nov</p>
+                                    </div>
+                                    <div class="newOverlay">
+                                        <p class="font-size-13 mb-0"><span>أطفالي</span> </p>
+                                    </div>
+                                    <h4 class="text-white text-center">طقم بناتي يناسب للخروجات وأعياد الميلاد والحفلات</h4>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <p class="text-white font-size-12 text-center">
+                                        <span class="opacity-75">الموزع</span> 
+                                        <img src="assets/images/avatar.png" class="rounded-circle" width="30" height="30"> 
+                                        <span class="opacity-75 pe-2">Ahmed</span>
+                                    </p>
+                                    <div class="tooltips text-white">
+                                        <i class="fa fa-share"></i>
+                                        <span class="tooltiptexts">
+                                            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white pe-2"></i></a>
+                                            <a href="#"><i class="fa fa-envelope text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-white opacity-75 font-size-13 text-center">يوجد العديد من المودلات والأشكال الأخري التي تناسب جميع الأذواق بكافة الأشكال والمقاسات</p>
+                                <p class="text-center text-white"><button class="btn btnOrder w-100 fw-bold text-uppercase font-size-14" href="#">أطلب الأن</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-2 cardCourse position-relative">
+                            <a href="#">
+                                <img src="assets/images/men3.jpg" class="card-img imgCard">
+                            </a>
+                            <div class="card-body pb-2">
+                                <a href="#">
+                                    <div class="absoluteText text-center px-2">
+                                        <p class="mb-1">01</p>
+                                        <p class="mb-1">Nov</p>
+                                    </div>
+                                    <div class="newOverlay">
+                                        <p class="font-size-13 mb-0"><span>رجالي</span> </p>
+                                    </div>
+                                    <h4 class="text-white text-center">طقم رجالي خروج مناسب لكل المناسبات</h4>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <p class="text-white font-size-12 text-center">
+                                        <span class="opacity-75">الموزع</span> 
+                                        <img src="assets/images/avatar.png" class="rounded-circle" width="30" height="30"> 
+                                        <span class="opacity-75 pe-2">Ahmed</span>
+                                    </p>
+                                    <div class="tooltips text-white">
+                                        <i class="fa fa-share"></i>
+                                        <span class="tooltiptexts">
+                                            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white pe-2"></i></a>
+                                            <a href="#"><i class="fa fa-envelope text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-white opacity-75 font-size-13 text-center">يوجد العديد من المودلات والأشكال الأخري التي تناسب جميع الأذواق بكافة الأشكال والمقاسات</p>
+                                <p class="text-center text-white"><button class="btn btnOrder w-100 fw-bold text-uppercase font-size-14" href="#">أطلب الأن</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-2 cardCourse position-relative">
+                            <a href="#">
+                                <img src="assets/images/sport2.jpg" class="card-img imgCard">
+                            </a>
+                            <div class="card-body pb-2">
+                                <a href="#">
+                                    <div class="absoluteText text-center px-2">
+                                        <p class="mb-1">01</p>
+                                        <p class="mb-1">Nov</p>
+                                    </div>
+                                    <div class="newOverlay">
+                                        <p class="font-size-13 mb-0"><span>رياضي</span> </p>
+                                    </div>
+                                    <h4 class="text-white text-center">حذاء رياضي</h4>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <p class="text-white font-size-12 text-center">
+                                        <span class="opacity-75">الموزع</span> 
+                                        <img src="assets/images/avatar.png" class="rounded-circle" width="30" height="30"> 
+                                        <span class="opacity-75 pe-2">Ahmed</span>
+                                    </p>
+                                    <div class="tooltips text-white">
+                                        <i class="fa fa-share"></i>
+                                        <span class="tooltiptexts">
+                                            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white pe-2"></i></a>
+                                            <a href="#"><i class="fa fa-envelope text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-white opacity-75 font-size-13 text-center">يوجد العديد من المودلات والأشكال الأخري التي تناسب جميع الأذواق بكافة الأشكال والمقاسات</p>
+                                <p class="text-center text-white"><button class="btn btnOrder w-100 fw-bold text-uppercase font-size-14" href="#">أطلب الأن</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mb-2 cardCourse position-relative">
+                            <a href="#">
+                                <img src="assets/images/boys1.jpg" class="card-img imgCard">
+                            </a>
+                            <div class="card-body pb-2">
+                                <a href="#">
+                                    <div class="absoluteText text-center px-2">
+                                        <p class="mb-1">01</p>
+                                        <p class="mb-1">Nov</p>
+                                    </div>
+                                    <div class="newOverlay">
+                                        <p class="font-size-13 mb-0"><span>أطفال</span> </p>
+                                    </div>
+                                    <h4 class="text-white text-center">طقم أطفال خروج مناسب لكل المناسبات</h4>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <p class="text-white font-size-12 text-center">
+                                        <span class="opacity-75">الموزع</span> 
+                                        <img src="assets/images/avatar.png" class="rounded-circle" width="30" height="30"> 
+                                        <span class="opacity-75 pe-2">السنافر</span>
+                                    </p>
+                                    <div class="tooltips text-white">
+                                        <i class="fa fa-share"></i>
+                                        <span class="tooltiptexts">
+                                            <a href="https://www.facebook.com"><i class="fab fa-facebook text-white pe-2"></i></a>
+                                            <a href="#"><i class="fa fa-envelope text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin text-white pe-2"></i></a>
+                                            <a href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-white opacity-75 font-size-13 text-center">يوجد العديد من المودلات والأشكال الأخري التي تناسب جميع الأذواق بكافة الأشكال والمقاسات</p>
+                                <p class="text-center text-white"><button class="btn btnOrder w-100 fw-bold text-uppercase font-size-14" href="#">أطلب الأن</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" dir="rtl">
+        <div class="container overflow-hidden">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-4 pb-3" data-aos="zoom-out-left" data-aos-duration="1500">
+                    <h6 class="fw-bold text-white pb-4">عن الموقع </h6>
+                    <p class="pt-1 mb-2"><i class="fa fa-location-arrow ms-2"></i> العنوان : مصر - المنيا - ملوي </p>
+                    <p class="mb-2"></p>
+                    <p class="mb-2"><a href="tel:+201114205243"><i class="fa fa-mobile ms-1"></i> رقم المحمول : +201114205243 </a></p>
+                    <!-- <p class="mb-2"><a href="fax:0238338445"><i class="fa fa-envelope-o me-2"></i>Fax 02-38338445</a></p> -->
+                    <p><a href="mailto:moh.essa2020@gmail.com"><i class="fas fa-envelope ms-2"></i> البريد الإلكتروني : moh.essa2020@gmail.com </a></p>
+                </div>
+                <div class="col-lg-5 col-md-5" data-aos="zoom-out" data-aos-duration="1500">
+                    <h6 class="fw-bold text-white pb-4">روابط تهمك</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><a href="#">ملابس رجالي</a></p>
+                            <p><a href="#">ملابس حريمي</a></p>
+                            <p><a href="#">ملابس أطفال</a></p>
+                            <p><a href="#">أحذية رياضية</a></p>
+                        </div>
+                        <div class="col-6">
+                            <p><a href="#">الصفحة الرئيسة</a></p>
+                            <p><a href="#">من نحن</a></p>
+                            <p><a href="#">تواصل معنا</a></p>
+                            <p><a href="#">نظارات طبية</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-out-right" data-aos-duration="1500">
+                    <img src="assets/images/mallawi.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-dark mt-4">
+            <div class="container">
+                <div class="d-md-flex justify-content-between pt-2">
+                    <p class="footText">
+                        2022 @  جميع الحقوق محفوظة . تم التصميم بواسطة <a class="textRed"
+                            href="https://www.linkedin.com/in/mohamedessa2020/" target="_blank" rel="nofollow noopener"> Mohamed Essa</a> 
+                    </p>
+                    <p class="pb-2 mb-0">
+                        <img src="./assets/images/payments.png" alt="payments">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        AOS.init();
+        new WOW().init();
+    </script>
+    <!-- For disable Right Click -->
+    <!-- <script language=JavaScript>
+        
+        var message = "function disabled";
+        
+        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+        
+        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+        
+        document.onmousedown = rtclickcheck;
+        
+    </script> -->
+    <script src="assets/js/file.js"></script>
+</body>
+
+</html>

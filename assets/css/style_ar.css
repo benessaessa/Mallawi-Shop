@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lato&display=swap');
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+.customHeader .ms-auto{
+    margin-right: auto !important;
+}
+.textDefult{
+    right: 1rem;
+}
+.absoluteText{ 
+    right: 5px;
+    left: unset;
+}
+.imgLab{
+    transform: rotatey(180deg) !important;
+}
+.pe-3 {
+    padding-left: 1rem!important;
+}
